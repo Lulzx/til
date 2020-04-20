@@ -15,3 +15,7 @@ A collection of stuff that I learn every day.
 
 - [install npm from src](nodejs/install-npm-from-src.md)
 
+### productivity
+
+- [chrome keyboard shortcuts](productivity/chrome-keyboard-shortcuts.md)
+

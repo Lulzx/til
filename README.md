@@ -1,6 +1,6 @@
 # TIL
 
-> 📝 Today I Learned
+> 📝 [Today I Learned](https://rishabh.xyz/til/)
 
 
 A collection of stuff that I learn every day.

@@ -1,4 +1,3 @@
-# TIL
 
 > 📝 [Today I Learned](https://rishabh.xyz/til/)
 

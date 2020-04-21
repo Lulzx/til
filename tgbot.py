@@ -25,49 +25,52 @@ def start(update, context):
 
 
 def parse_bbcode(message_text, length, entities, urled=False):
-    if message_text is None:
-        return None
-    message_text = length*"^" + message_text
-    if not sys.maxunicode == 0xffff:
-        message_text = message_text.encode('utf-16-le')
+	if message_text is None:
+		return None
+	message_text = length*"^" + message_text
+	if not sys.maxunicode == 0xffff:
+		message_text = message_text.encode('utf-16-le')
 
-    bbcode_text = ''
-    last_offset = 0
+	bbcode_text = ''
+	last_offset = 0
 
-    for entity, text in sorted(entities.items(), key=(lambda item: item[0].offset)):
+	for entity, text in sorted(entities.items(), key=(lambda item: item[0].offset)):
 
-        if entity.type == 'text_link':
-            insert = '<a href="{}">{}</a>'.format(entity.url, text)
-        elif entity.type == 'mention':
-            insert = '<a href="https://t.me/{0}">{1}</a>'.format(text.strip('@'),text)
-        elif entity.type == 'url' and urled:
-            insert = '<a href="{0}]{0}</a>'.format(text)
-        elif entity.type == 'bold':
-            insert = '<b>' + text + '</b>'
-        elif entity.type == 'italic':
-            insert = '<i>' + text + '</i>'
-        elif entity.type == 'underline':
-            insert = '<u>' + text + '</u>'
-        elif entity.type == 'strikethrough':
-            insert = '<s>' + text + '</s>'
-        elif entity.type == 'code':
-            insert = '<code>' + text + '</code>'
-        elif entity.type == 'pre':
-            insert = '<pre>' + text + '</pre>'
-        else:
-            insert = text
-        if sys.maxunicode == 0xffff:
-            bbcode_text += message_text[last_offset:entity.offset] + insert
-        else:
-            bbcode_text += message_text[last_offset * 2:entity.offset * 2].decode('utf-16-le') + insert
+		if entity.type == 'text_link':
+			if text == entity.url:
+				insert = str(entity.url)
+			else:
+				insert = '<a href="{}">{}</a>'.format(entity.url, text)
+		elif entity.type == 'mention':
+			insert = '<a href="https://t.me/{0}">{1}</a>'.format(text.strip('@'),text)
+		elif entity.type == 'url' and urled:
+			insert = '<a href="{0}">{0}</a>'.format(text)
+		elif entity.type == 'bold':
+			insert = '<b>' + text + '</b>'
+		elif entity.type == 'italic':
+			insert = '<i>' + text + '</i>'
+		elif entity.type == 'underline':
+			insert = '<u>' + text + '</u>'
+		elif entity.type == 'strikethrough':
+			insert = '<s>' + text + '</s>'
+		elif entity.type == 'code':
+			insert = '<code>' + text + '</code>'
+		elif entity.type == 'pre':
+			insert = '<pre>' + text + '</pre>'
+		else:
+			insert = text
+		if sys.maxunicode == 0xffff:
+			bbcode_text += message_text[last_offset:entity.offset] + insert
+		else:
+			bbcode_text += message_text[last_offset * 2:entity.offset * 2].decode('utf-16-le') + insert
 
-        last_offset = entity.offset + entity.length
+		last_offset = entity.offset + entity.length
 
-    if sys.maxunicode == 0xffff:
-        bbcode_text += message_text[last_offset:]
-    else:
-        bbcode_text += message_text[last_offset * 2:].decode('utf-16-le')
-    return bbcode_text
+	if sys.maxunicode == 0xffff:
+		bbcode_text += message_text[last_offset:]
+	else:
+		bbcode_text += message_text[last_offset * 2:].decode('utf-16-le')
+	return bbcode_text
 
 
 def post(update, context):
@@ -89,7 +92,7 @@ def post(update, context):
 				try:
 					commit = repo.create_file(filename, "automated post from telegram channel", content, branch="master")
 					sha = getattr(commit['commit'], 'sha')
-					url = "https://github.com/Lulzx/test/commit/" + sha
+					url = "https://github.com/Lulzx/til/commit/" + sha
 					context.bot.send_message(chat_id=691609650, text="new addition in TIL repository: {}".format(url))
 				except:
 					pass

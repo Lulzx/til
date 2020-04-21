@@ -3,8 +3,7 @@
 import os
 
 
-HEADER="""# TIL
-
+HEADER="""
 > 📝 [Today I Learned](https://rishabh.xyz/til/)
 
 

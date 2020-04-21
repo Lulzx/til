@@ -19,3 +19,7 @@ A collection of stuff that I learn every day.
 
 - [chrome keyboard shortcuts](productivity/chrome-keyboard-shortcuts.md)
 
+### python
+
+- [getattr function](python/getattr-function.md)
+

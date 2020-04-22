@@ -12,6 +12,7 @@ A collection of stuff that I learn every day.
 
 ### linux
 
+- [symlinking](linux/symlinking.md)
 - [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
 
 ### nodejs

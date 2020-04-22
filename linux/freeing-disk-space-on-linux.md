@@ -1,4 +1,4 @@
-# Freeing disk space on your Linux server
+# Freeing disk space on Linux
 
 To find out where disk space is being used:
 

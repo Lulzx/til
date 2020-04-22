@@ -12,7 +12,7 @@ A collection of stuff that I learn every day.
 
 ### linux
 
-- [freeing disk space on your linux server](linux/freeing-disk-space-on-your-linux-server.md)
+- [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
 
 ### nodejs
 

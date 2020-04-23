@@ -14,6 +14,7 @@ A collection of stuff that I learn every day.
 
 - [symlinking](linux/symlinking.md)
 - [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
+- [changing permissions](linux/changing-permissions.md)
 
 ### nodejs
 

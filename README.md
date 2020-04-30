@@ -25,6 +25,10 @@ A collection of stuff that I learn every day.
 
 - [chrome keyboard shortcuts](productivity/chrome-keyboard-shortcuts.md)
 
+### programming
+
+- [finding all sub palindromes in o(n)](programming/Finding-all-sub-palindromes-in-O(N).md)
+
 ### python
 
 - [getattr function](python/getattr-function.md)

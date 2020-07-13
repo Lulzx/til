@@ -12,10 +12,11 @@ A collection of stuff that I learn every day.
 
 ### linux
 
-- [setting touchpad gestures on ubuntu](linux/setting-touchpad-gestures-on-ubuntu.md)
+- [purge snap apps](linux/purge-snap-apps.md)
 - [symlinking](linux/symlinking.md)
-- [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
 - [changing permissions](linux/changing-permissions.md)
+- [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
+- [setting touchpad gestures on ubuntu](linux/setting-touchpad-gestures-on-ubuntu.md)
 
 ### nodejs
 

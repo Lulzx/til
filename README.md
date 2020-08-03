@@ -14,8 +14,8 @@ A collection of stuff that I learn every day.
 
 - [purge snap apps](linux/purge-snap-apps.md)
 - [symlinking](linux/symlinking.md)
-- [changing permissions](linux/changing-permissions.md)
 - [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
+- [changing permissions](linux/changing-permissions.md)
 - [setting touchpad gestures on ubuntu](linux/setting-touchpad-gestures-on-ubuntu.md)
 
 ### nodejs
@@ -33,4 +33,8 @@ A collection of stuff that I learn every day.
 ### python
 
 - [getattr function](python/getattr-function.md)
+
+### windows
+
+- [boot](windows/boot.md)
 

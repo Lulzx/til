@@ -9,6 +9,7 @@ A collection of stuff that I learn every day.
 ### github
 
 - [github actions](github/github-actions.md)
+- [squash merge pull requests](github/squash-merge-pull-requests.md)
 
 ### linux
 

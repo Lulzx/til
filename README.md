@@ -37,5 +37,5 @@ A collection of stuff that I learn every day.
 
 ### windows
 
-- [boot](windows/boot.md)
+- [fix boot](windows/fix-boot.md)
 

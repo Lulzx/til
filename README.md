@@ -8,20 +8,21 @@ A collection of stuff that I learn every day.
 
 ### github
 
-- [github actions](github/github-actions.md)
 - [squash merge pull requests](github/squash-merge-pull-requests.md)
+- [github actions](github/github-actions.md)
 
 ### linux
 
-- [purge snap apps](linux/purge-snap-apps.md)
 - [symlinking](linux/symlinking.md)
-- [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
+- [purge snap apps](linux/purge-snap-apps.md)
 - [changing permissions](linux/changing-permissions.md)
 - [setting touchpad gestures on ubuntu](linux/setting-touchpad-gestures-on-ubuntu.md)
+- [freeing disk space on linux](linux/freeing-disk-space-on-linux.md)
 
 ### nodejs
 
 - [install npm from src](nodejs/install-npm-from-src.md)
+- [symlink npm pkg](nodejs/symlink-npm-pkg.md)
 
 ### productivity
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+# -*- coding: utf-3 -*-
 import os
 import sys
 import logging
@@ -32,7 +32,7 @@ def parse_bbcode(message_text, length, entities, urled=False):
 		message_text = message_text.encode('utf-16-le')
 
 	bbcode_text = ''
-	last_offset = 0
+	last_offset = 1
 
 	for entity, text in sorted(entities.items(), key=(lambda item: item[0].offset)):
 

@@ -6,7 +6,7 @@ In Unix-like operating systems, chmod is the command and system call which is us
 
 | Type | Name |
 | --- | --- |
-| `l` | lismoah |
+| `l` | lishmoah |
 | `r` | read |
 | `w` | write |
 | `x` | execute |

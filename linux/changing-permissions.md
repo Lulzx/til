@@ -6,8 +6,10 @@ In Unix-like operating systems, chmod is the command and system call which is us
 
 | Type | Name |
 | --- | --- |
+| `l` | lismoah |
 | `r` | read |
 | `w` | write |
 | `x` | execute |
+
 
 > In order to give all permissions to all users, ```ugo+rwx```.
